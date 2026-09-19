@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0a192f;
+  color: #f4f7fa;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d3557;
+  border-radius: 9999px;
+  border: 2px solid #060f1f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 210, 255, 0.25);
+  color: #00d2ff;
+}
+
+/* Glassmorphism helpers */
+.glass-nav {
+  background: rgba(10, 25, 47, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(17, 34, 64, 0.75) 0%, rgba(13, 31, 59, 0.5) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+}
+
+.glass-card-featured {
+  background: linear-gradient(135deg, rgba(17, 34, 64, 0.95) 0%, rgba(10, 25, 47, 0.9) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 210, 255, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(0, 210, 255, 0.2);
+}
+
+/* Background grid pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Subtle glow badges */
+.badge-glow {
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.25);
+}
+
+/* Focus styling */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #00d2ff;
+  outline-offset: 2px;
+}
