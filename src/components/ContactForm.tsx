@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { BUSINESS_SEGMENTS, WHATSAPP_NUMBER, WHATSAPP_DISPLAY, COMPANY_EMAIL } from "@/lib/constants";
 import { formatPhoneNumber, cleanDigits, buildWhatsAppUrl } from "@/lib/utils";
+import { supabase } from "@/lib/supabase";
 
 interface FormState {
   name: string;
@@ -80,7 +81,7 @@ export default function ContactForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validate()) {
@@ -88,6 +89,25 @@ export default function ContactForm() {
     }
 
     setIsSubmitting(true);
+
+    const segmentLabel =
+      BUSINESS_SEGMENTS.find((s) => s.id === formData.segment)?.label || formData.segment;
+
+    // Se o Supabase estiver configurado com as variáveis de ambiente, salva o lead no banco
+    if (supabase) {
+      try {
+        await supabase.from("leads").insert([
+          {
+            name: formData.name.trim(),
+            segment: segmentLabel,
+            phone: formData.phone.trim(),
+            message: formData.message.trim() || null,
+          },
+        ]);
+      } catch (err) {
+        console.warn("Aviso ao salvar lead no Supabase:", err);
+      }
+    }
 
     // Efeito de confete moderno
     try {
@@ -100,9 +120,6 @@ export default function ContactForm() {
     } catch {
       // Ignora se canvas-confetti não carregar
     }
-
-    const segmentLabel =
-      BUSINESS_SEGMENTS.find((s) => s.id === formData.segment)?.label || formData.segment;
 
     // Monta a mensagem estruturada e elegante para o WhatsApp
     const messageLines = [
