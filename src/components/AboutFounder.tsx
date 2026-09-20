@@ -48,22 +48,22 @@ export default function AboutFounder() {
               {/* Card da Foto */}
               <div className="relative rounded-3xl overflow-hidden bg-navy-900 border-2 border-brand-cyan/40 shadow-2xl">
                 {!imageError ? (
-                  // Imagem elegante de desenvolvedor com fallback
-                  <div className="relative aspect-[4/5] w-full bg-gradient-to-b from-navy-800 to-navy-950 flex items-center justify-center overflow-hidden">
+                  // Foto Real do Fundador (David Matos Lima)
+                  <div className="relative aspect-[3/4] w-full bg-gradient-to-b from-navy-800 to-navy-950 flex items-center justify-center overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85"
-                      alt="David Matos Lima - Fundador da DD Sistemas"
+                      src="/david-matos-lima.png"
+                      alt="David Matos Lima - Fundador e Desenvolvedor da DD Sistemas"
                       onError={() => setImageError(true)}
-                      className="w-full h-full object-cover object-center filter brightness-95 contrast-105 hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover object-top filter brightness-100 contrast-105 hover:scale-105 transition-transform duration-500"
                     />
 
-                    {/* Gradiente escuro na base para legibilidade */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-80" />
+                    {/* Gradiente escuro sutil na base para legibilidade */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent pointer-events-none" />
                   </div>
                 ) : (
-                  // Fallback estilizado caso a imagem externa não carregue
-                  <div className="aspect-[4/5] w-full bg-gradient-to-br from-navy-850 via-navy-900 to-navy-950 flex flex-col items-center justify-center p-8 text-center">
+                  // Fallback estilizado caso ocorra algum erro
+                  <div className="aspect-[3/4] w-full bg-gradient-to-br from-navy-850 via-navy-900 to-navy-950 flex flex-col items-center justify-center p-8 text-center">
                     <div className="w-24 h-24 rounded-3xl bg-brand-cyan/20 border border-brand-cyan/40 flex items-center justify-center text-brand-cyan mb-4 shadow-glow">
                       <Terminal className="w-12 h-12" />
                     </div>
