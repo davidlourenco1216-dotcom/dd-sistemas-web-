@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Solutions from "@/components/Solutions";
 import CondoEcosystem from "@/components/CondoEcosystem";
+import AboutFounder from "@/components/AboutFounder";
 import Differentials from "@/components/Differentials";
 import Testimonials from "@/components/Testimonials";
 import ContactForm from "@/components/ContactForm";
@@ -39,6 +40,9 @@ export default function HomePage() {
 
         {/* Aplicativos Especializados de Condomínios Residenciais (DD Estoque + ManutenPro) */}
         <CondoEcosystem />
+
+        {/* Seção Sobre o Fundador (David Matos Lima) */}
+        <AboutFounder />
 
         {/* Diferenciais Competitivos e Métricas de Impacto */}
         <Differentials />

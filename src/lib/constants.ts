@@ -21,6 +21,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Início", href: "#inicio" },
   { label: "Soluções", href: "#solucoes" },
   { label: "Apps Condomínio", href: "#condominios" },
+  { label: "Sobre o Fundador", href: "#fundador" },
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "Depoimentos", href: "#depoimentos" },
   { label: "Contato", href: "#contato" },
