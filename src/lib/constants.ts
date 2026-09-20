@@ -1,6 +1,7 @@
 import {
   NavItem,
   SolutionItem,
+  CondoAppItem,
   DifferentialItem,
   TestimonialItem,
   MetricItem,
@@ -9,7 +10,6 @@ import {
 // ==========================================
 // CONFIGURAÇÃO GERAL DA EMPRESA
 // ==========================================
-// IMPORTANTE: Altere o número de WhatsApp abaixo para o número real da DD Sistemas (DDI + DDD + Número)
 export const WHATSAPP_NUMBER = "5585999999999";
 export const WHATSAPP_DISPLAY = "(85) 99999-9999";
 export const COMPANY_EMAIL = "contato@ddsistemas.com.br";
@@ -20,12 +20,13 @@ export const COPYRIGHT_TEXT = "© 2026 DD Sistemas. Todos os direitos reservados
 export const NAV_ITEMS: NavItem[] = [
   { label: "Início", href: "#inicio" },
   { label: "Soluções", href: "#solucoes" },
+  { label: "Condomínios 360°", href: "#condominios" },
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "Depoimentos", href: "#depoimentos" },
   { label: "Contato", href: "#contato" },
 ];
 
-// Seção de Soluções
+// Seção Geral de Soluções
 export const SOLUTIONS: SolutionItem[] = [
   {
     id: "pequenos-empreendedores",
@@ -47,23 +48,23 @@ export const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: "condominios-residenciais",
-    badge: "Solução Mais Procurada",
+    badge: "Ecossistema Completo",
     title: "Condomínios Residenciais",
     targetAudience: "Síndicos, Administradoras, Portarias e Moradores",
     description:
-      "O ERP mais completo e intuitivo para modernizar a gestão do seu condomínio, garantir segurança na portaria e encantar os moradores.",
+      "Suíte integrada de aplicativos: ERP de Portaria & Acessos, App DD Estoque (Almoxarifado) e App ManutenPro (Manutenções & O.S.).",
     features: [
-      "Controle ágil de acesso de visitantes, veículos e prestadores",
-      "Gestão de encomendas com notificação push instantânea",
-      "Reserva online de áreas comuns (churrasqueira, salão, academia)",
-      "Mural de avisos digitais com confirmação de leitura",
+      "ERP Central: Controle de acessos, encomendas e reservas online",
+      "App DD Estoque: Almoxarifado, insumos e alerta de estoque mínimo",
+      "App ManutenPro: Preventivas, cronograma de elevadores/bombas e O.S. com foto",
+      "Mural de avisos digitais com confirmação de leitura pelo morador",
       "Centralização de atas, documentos e comunicados em nuvem",
-      "App leve para moradores e painel ultra veloz para a portaria",
+      "Painel administrativo em tempo real para o síndico e conselho",
     ],
     isFeatured: true,
     iconName: "Building2",
     whatsappMessage:
-      "Olá, DD Sistemas! Gostaria de agendar uma demonstração do ERP para Condomínios Residenciais.",
+      "Olá, DD Sistemas! Gostaria de uma demonstração completa do Ecossistema para Condomínios (ERP + DD Estoque + ManutenPro).",
   },
   {
     id: "empresas-negocios",
@@ -82,6 +83,66 @@ export const SOLUTIONS: SolutionItem[] = [
     iconName: "Briefcase",
     whatsappMessage:
       "Olá, DD Sistemas! Quero solicitar uma proposta para site institucional ou desenvolvimento de software sob medida para minha empresa.",
+  },
+];
+
+// ECOSSISTEMA ESPECÍFICO DE CONDOMÍNIOS RESIDENCIAIS (ERP + DD Estoque + ManutenPro)
+export const CONDO_ECOSYSTEM: CondoAppItem[] = [
+  {
+    id: "erp-condominio-core",
+    isMainCore: true,
+    badge: "Plataforma Central",
+    name: "ERP DD Condomínios",
+    category: "Gestão, Portaria & Moradores",
+    description:
+      "A espinha dorsal da gestão condominial. Centraliza segurança de portaria, encomendas no WhatsApp, reservas de áreas e comunicação com moradores.",
+    features: [
+      "Controle ágil de acesso de visitantes, veículos e prestadores",
+      "Gestão de encomendas com notificação push instantânea no WhatsApp",
+      "Reserva online de áreas comuns (churrasqueira, salão, academia)",
+      "Mural de avisos digital com confirmação de leitura pelos moradores",
+      "Armazenamento em nuvem de atas, convenções e prestação de contas",
+      "App mobile intuitivo para moradores e painel veloz para porteiros",
+    ],
+    iconName: "Building2",
+    whatsappMessage:
+      "Olá, DD Sistemas! Gostaria de agendar uma demonstração do ERP DD Condomínios.",
+  },
+  {
+    id: "dd-estoque",
+    badge: "Aplicativo Especializado",
+    name: "App DD Estoque",
+    category: "Almoxarifado & Insumos",
+    description:
+      "Controle total dos suprimentos e materiais do condomínio. Acabe com sumiços, desperdícios e compras emergenciais com preços elevados.",
+    features: [
+      "Controle rigoroso de almoxarifado (materiais de limpeza, ferramentas, lâmpadas, elétricos)",
+      "Registro de entrada e saída com identificação de quem retirou cada item",
+      "Alerta automático de estoque mínimo para reposição antes do produto faltar",
+      "Relatórios de consumo periódicos por área, bloco e centro de custo",
+      "Histórico de compras e controle de validade de insumos",
+    ],
+    iconName: "Boxes",
+    whatsappMessage:
+      "Olá, DD Sistemas! Gostaria de conhecer e contratar o aplicativo DD Estoque para o almoxarifado do condomínio.",
+  },
+  {
+    id: "manutenpro",
+    badge: "Aplicativo Especializado",
+    name: "App ManutenPro",
+    category: "Manutenção & Infraestrutura",
+    description:
+      "Gestão inteligente de manutenções preventivas e corretivas de todos os equipamentos do condomínio, evitando paradas e prejuízos inesperados.",
+    features: [
+      "Cronograma automatizado de manutenções (elevadores, bombas, geradores, portões, piscinas)",
+      "Abertura rápida de Ordens de Serviço (O.S.) com anexo de fotos direto pelo celular",
+      "Histórico técnico completo de manutenções e peças substituídas",
+      "Alertas de vencimento de contratos de manutenção e vistorias obrigatórias",
+      "Relatórios de desempenho e conformidade para assembleias e auditorias",
+    ],
+    iconName: "Wrench",
+    whatsappMessage:
+      "Olá, DD Sistemas! Gostaria de conhecer e contratar o aplicativo ManutenPro para manutenção e O.S. do condomínio.",
   },
 ];
 
@@ -149,7 +210,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     rating: 5,
     tag: "Condomínio Residencial",
     content:
-      "O ERP da DD Sistemas revolucionou nossa portaria. Antes as encomendas viravam um caos e os moradores reclamavam de extravios. Hoje, a notificação cai no WhatsApp do morador no mesmo segundo. A transparência na reserva das áreas comuns eliminou qualquer atrito.",
+      "A combinação do ERP com o DD Estoque e o ManutenPro mudou o patamar do nosso condomínio. A portaria não tem mais filas de encomendas, os insumos de limpeza são controlados na vírgula e as manutenções das bombas e geradores agora têm O.S. com foto. Os moradores elogiam e a prestação de contas ficou 100% transparente.",
   },
   {
     id: "2",
@@ -179,8 +240,10 @@ export const TESTIMONIALS: TestimonialItem[] = [
 
 // Segmentos para o formulário de contato
 export const BUSINESS_SEGMENTS = [
+  { id: "condominio-ecossistema", label: "Condomínio Residencial (ERP + DD Estoque + ManutenPro)" },
+  { id: "dd-estoque-avulso", label: "App DD Estoque (Almoxarifado de Condomínio)" },
+  { id: "manutenpro-avulso", label: "App ManutenPro (Manutenção Preventiva & O.S.)" },
   { id: "pequeno-negocio", label: "Pequeno Empreendedor (Açaí, Sorveteria, Pet Shop, Loja)" },
-  { id: "condominio", label: "Condomínio Residencial (Síndico ou Administradora)" },
   { id: "empresa", label: "Empresa / Corporativo (Site ou Automação)" },
   { id: "sob-medida", label: "Projeto de Software Sob Medida / Outro" },
 ];

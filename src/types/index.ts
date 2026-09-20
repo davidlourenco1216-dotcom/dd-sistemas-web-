@@ -3,6 +3,18 @@ export interface NavItem {
   href: string;
 }
 
+export interface CondoAppItem {
+  id: string;
+  badge: string;
+  name: string;
+  category: string;
+  description: string;
+  features: string[];
+  iconName: string;
+  whatsappMessage: string;
+  isMainCore?: boolean;
+}
+
 export interface SolutionItem {
   id: string;
   badge?: string;

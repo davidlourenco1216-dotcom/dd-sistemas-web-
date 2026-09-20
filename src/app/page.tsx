@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Solutions from "@/components/Solutions";
+import CondoEcosystem from "@/components/CondoEcosystem";
 import Differentials from "@/components/Differentials";
 import Testimonials from "@/components/Testimonials";
 import ContactForm from "@/components/ContactForm";
@@ -33,8 +34,11 @@ export default function HomePage() {
         {/* Seção Hero com efeito WOW & Visualização Interativa */}
         <Hero />
 
-        {/* Seção de Soluções com Cards Hover e Destaque no ERP de Condomínios */}
+        {/* Seção Geral de Soluções */}
         <Solutions />
+
+        {/* Ecossistema Especializado de Condomínios Residenciais (ERP + DD Estoque + ManutenPro) */}
+        <CondoEcosystem />
 
         {/* Diferenciais Competitivos e Métricas de Impacto */}
         <Differentials />
