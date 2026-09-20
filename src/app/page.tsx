@@ -38,7 +38,7 @@ export default function HomePage() {
         {/* Seção Geral de Soluções */}
         <Solutions />
 
-        {/* Aplicativos Especializados de Condomínios Residenciais (DD Estoque + ManutenPro) */}
+        {/* Aplicativos Especializados de Condomínios Residenciais (DD Estoque + DD ManutenPro) */}
         <CondoEcosystem />
 
         {/* Seção Sobre o Fundador (David Matos Lima) */}

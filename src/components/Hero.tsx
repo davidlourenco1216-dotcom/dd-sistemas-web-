@@ -75,7 +75,7 @@ export default function Hero() {
             Desenvolvemos{" "}
             <strong className="text-white font-semibold">Sites Institucionais</strong> modernos,{" "}
             <strong className="text-brand-cyan font-semibold">
-              Aplicativos para Condomínios (DD Estoque e ManutenPro)
+              Aplicativos para Condomínios (DD Estoque e DD ManutenPro)
             </strong>{" "}
             e <strong className="text-white font-semibold">Sistemas sob medida</strong> para acelerar a
             sua operação.
@@ -200,7 +200,7 @@ export default function Hero() {
                   }`}
                 >
                   <Building2 className="w-3.5 h-3.5" />
-                  <span>DD Estoque &amp; ManutenPro</span>
+                  <span>DD Estoque &amp; DD ManutenPro</span>
                 </button>
                 <button
                   onClick={() => setActiveTab("delivery")}
@@ -263,13 +263,13 @@ export default function Hero() {
                     </div>
                   </div>
 
-                  {/* Bloco 2: App ManutenPro */}
+                  {/* Bloco 2: App DD ManutenPro */}
                   <div className="p-5 rounded-2xl bg-navy-900/90 border border-brand-cyan/40 shadow-glow flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between mb-3">
                         <span className="text-xs font-bold text-white flex items-center gap-2">
                           <TrendingUp className="w-4 h-4 text-cyan-300" />
-                          App ManutenPro (Manutenção &amp; O.S.)
+                          App DD ManutenPro (Manutenção &amp; O.S.)
                         </span>
                         <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-bold">
                           Preventivas em Dia

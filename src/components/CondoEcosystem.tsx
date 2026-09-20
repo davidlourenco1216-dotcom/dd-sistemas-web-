@@ -65,11 +65,11 @@ export default function CondoEcosystem() {
           >
             Dois aplicativos objetivos e poderosos projetados para resolver as duas maiores dores
             da rotina predial: o almoxarifado de insumos com o <strong>DD Estoque</strong> e a gestão de
-            manutenções preventivas com o <strong>ManutenPro</strong>.
+            manutenções preventivas com o <strong>DD ManutenPro</strong>.
           </motion.p>
         </div>
 
-        {/* Grid dos 2 Cards em Destaque Especial (DD Estoque + ManutenPro) */}
+        {/* Grid dos 2 Cards em Destaque Especial (DD Estoque + DD ManutenPro) */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
           {CONDO_ECOSYSTEM.map((app, index) => {
             const waLink = buildWhatsAppUrl(app.whatsappMessage);
@@ -171,7 +171,7 @@ export default function CondoEcosystem() {
                 Contratação Avulsa ou Combo Completo
               </h4>
               <p className="text-xs sm:text-sm text-slate-300 mt-1">
-                Você pode contratar o <strong>DD Estoque</strong> e o <strong>ManutenPro</strong> juntos
+                Você pode contratar o <strong>DD Estoque</strong> e o <strong>DD ManutenPro</strong> juntos
                 ou apenas o aplicativo específico que seu condomínio mais necessita no momento.
               </p>
             </div>
@@ -179,7 +179,7 @@ export default function CondoEcosystem() {
 
           <a
             href={buildWhatsAppUrl(
-              "Olá, DD Sistemas! Gostaria de consultar valores para os aplicativos de condomínio (DD Estoque e ManutenPro)."
+              "Olá, DD Sistemas! Gostaria de consultar valores para os aplicativos de condomínio (DD Estoque e DD ManutenPro)."
             )}
             target="_blank"
             rel="noopener noreferrer"

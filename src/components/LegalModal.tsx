@@ -94,7 +94,7 @@ export default function LegalModal({ type, onClose }: LegalModalProps) {
                   <h4 className="font-bold text-white text-sm mb-1.5">1. Quem Somos e Nosso Compromisso</h4>
                   <p>
                     A <strong>DD Sistemas</strong> é uma empresa especializada em desenvolvimento de
-                    softwares, aplicativos para condomínios (DD Estoque e ManutenPro), sistemas para
+                    softwares, aplicativos para condomínios (DD Estoque e DD ManutenPro), sistemas para
                     pequenos negócios e plataformas institucionais. Respeitamos a sua privacidade e
                     garantimos a máxima transparência sobre o tratamento de qualquer dado fornecido em
                     nossos canais.

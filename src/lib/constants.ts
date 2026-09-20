@@ -56,10 +56,10 @@ export const SOLUTIONS: SolutionItem[] = [
     title: "Condomínios Residenciais",
     targetAudience: "Síndicos, Administradoras e Conselhos Condominiais",
     description:
-      "Aplicativos específicos focados nas duas maiores dores da gestão predial: o App DD Estoque (almoxarifado) e o App ManutenPro (manutenções).",
+      "Aplicativos específicos focados nas duas maiores dores da gestão predial: o App DD Estoque (almoxarifado) e o App DD ManutenPro (manutenções).",
     features: [
       "App DD Estoque: Almoxarifado, controle de insumos e alerta de estoque mínimo",
-      "App ManutenPro: Preventivas, cronograma de elevadores/bombas e O.S. com foto",
+      "App DD ManutenPro: Preventivas, cronograma de elevadores/bombas e O.S. com foto",
       "Controle rigoroso de materiais de limpeza, ferramentas e lâmpadas",
       "Cronograma preventivo de equipamentos e infraestrutura predial",
       "Relatórios de consumo e históricos técnicos para prestação de contas",
@@ -68,7 +68,7 @@ export const SOLUTIONS: SolutionItem[] = [
     isFeatured: true,
     iconName: "Building2",
     whatsappMessage:
-      "Olá, DD Sistemas! Gostaria de uma demonstração dos aplicativos para condomínios (DD Estoque e ManutenPro).",
+      "Olá, DD Sistemas! Gostaria de uma demonstração dos aplicativos para condomínios (DD Estoque e DD ManutenPro).",
   },
   {
     id: "empresas-negocios",
@@ -90,7 +90,7 @@ export const SOLUTIONS: SolutionItem[] = [
   },
 ];
 
-// APLICATIVOS ESPECÍFICOS DE CONDOMÍNIOS RESIDENCIAIS (DD Estoque + ManutenPro)
+// APLICATIVOS ESPECÍFICOS DE CONDOMÍNIOS RESIDENCIAIS (DD Estoque + DD ManutenPro)
 export const CONDO_ECOSYSTEM: CondoAppItem[] = [
   {
     id: "dd-estoque",
@@ -115,7 +115,7 @@ export const CONDO_ECOSYSTEM: CondoAppItem[] = [
     id: "manutenpro",
     isMainCore: false,
     badge: "Manutenção & Infraestrutura",
-    name: "App ManutenPro",
+    name: "App DD ManutenPro",
     category: "Engenharia & Preventivas Prediais",
     description:
       "Focado na gestão de manutenções preventivas e corretivas de equipamentos e infraestrutura. Garanta a segurança do condomínio sem paradas inesperadas.",
@@ -128,7 +128,7 @@ export const CONDO_ECOSYSTEM: CondoAppItem[] = [
     ],
     iconName: "Wrench",
     whatsappMessage:
-      "Olá, DD Sistemas! Gostaria de agendar uma demonstração do aplicativo ManutenPro para manutenção e O.S. do meu condomínio.",
+      "Olá, DD Sistemas! Gostaria de agendar uma demonstração do aplicativo DD ManutenPro para manutenção e O.S. do meu condomínio.",
   },
 ];
 
@@ -196,7 +196,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     rating: 5,
     tag: "Condomínio Residencial",
     content:
-      "A implementação dos aplicativos DD Estoque e ManutenPro mudou o patamar do nosso condomínio. Os insumos de limpeza, lâmpadas e ferramentas são controlados na vírgula e as manutenções das bombas, elevadores e geradores agora têm O.S. com foto. A economia gerada foi imediata e a prestação de contas ficou 100% transparente.",
+      "A implementação dos aplicativos DD Estoque e DD ManutenPro mudou o patamar do nosso condomínio. Os insumos de limpeza, lâmpadas e ferramentas são controlados na vírgula e as manutenções das bombas, elevadores e geradores agora têm O.S. com foto. A economia gerada foi imediata e a prestação de contas ficou 100% transparente.",
   },
   {
     id: "2",
@@ -226,9 +226,9 @@ export const TESTIMONIALS: TestimonialItem[] = [
 
 // Segmentos para o formulário de contato
 export const BUSINESS_SEGMENTS = [
-  { id: "ambos-apps-condominio", label: "Condomínio Residencial (DD Estoque + ManutenPro)" },
+  { id: "ambos-apps-condominio", label: "Condomínio Residencial (DD Estoque + DD ManutenPro)" },
   { id: "dd-estoque-avulso", label: "App DD Estoque (Almoxarifado & Insumos)" },
-  { id: "manutenpro-avulso", label: "App ManutenPro (Manutenção Preventiva & O.S.)" },
+  { id: "manutenpro-avulso", label: "App DD ManutenPro (Manutenção Preventiva & O.S.)" },
   { id: "pequeno-negocio", label: "Pequeno Empreendedor (Açaí, Sorveteria, Pet Shop, Loja)" },
   { id: "empresa", label: "Empresa / Corporativo (Site ou Automação)" },
   { id: "sob-medida", label: "Projeto de Software Sob Medida / Outro" },
