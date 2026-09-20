@@ -4,13 +4,16 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   MessageCircle,
+  Instagram,
   UserCheck,
   Code2,
   CheckCircle2,
   Sparkles,
   Terminal,
+  ExternalLink,
 } from "lucide-react";
 import { buildWhatsAppUrl } from "@/lib/utils";
+import { INSTAGRAM_URL } from "@/lib/constants";
 
 export default function AboutFounder() {
   const [imageError, setImageError] = useState(false);
@@ -163,16 +166,29 @@ export default function AboutFounder() {
               </div>
             </div>
 
-            {/* Botão CTA Verde WhatsApp */}
-            <div className="mt-8 pt-4">
+            {/* Botões de Ação e Redes Sociais */}
+            <div className="mt-8 pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+              {/* Botão Conversar via WhatsApp */}
               <a
                 href={directWhatsAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base font-bold text-white bg-brand-whatsapp hover:bg-brand-whatsappHover shadow-glow-wa transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-brand-whatsapp hover:bg-brand-whatsappHover shadow-glow-wa transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>Falar Diretamente com David no WhatsApp</span>
+                <span>Conversar via WhatsApp</span>
+              </a>
+
+              {/* Botão Siga no Instagram */}
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 shadow-md hover:shadow-glow transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+              >
+                <Instagram className="w-5 h-5" />
+                <span>Siga no Instagram</span>
+                <ExternalLink className="w-3.5 h-3.5 opacity-70" />
               </a>
             </div>
           </motion.div>

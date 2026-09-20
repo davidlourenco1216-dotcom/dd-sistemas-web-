@@ -10,8 +10,11 @@ import {
 // ==========================================
 // CONFIGURAÇÃO GERAL DA EMPRESA
 // ==========================================
-export const WHATSAPP_NUMBER = "5585999999999";
-export const WHATSAPP_DISPLAY = "(85) 99999-9999";
+export const WHATSAPP_NUMBER = "5585992002559";
+export const WHATSAPP_DISPLAY = "(85) 99200-2559";
+export const INSTAGRAM_URL =
+  "https://www.instagram.com/dd.sistemas1622?stkn=ZGRiNXYwaG1lNzFh";
+export const INSTAGRAM_HANDLE = "@dd.sistemas1622";
 export const COMPANY_EMAIL = "contato@ddsistemas.com.br";
 export const COMPANY_NAME = "DD Sistemas";
 export const COPYRIGHT_TEXT = "© 2026 DD Sistemas. Todos os direitos reservados.";

@@ -2,12 +2,25 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowUpRight, MessageSquare, Terminal } from "lucide-react";
-import { NAV_ITEMS, COMPANY_NAME } from "@/lib/constants";
+import {
+  Menu,
+  X,
+  ArrowUpRight,
+  MessageSquare,
+  MessageCircle,
+  Instagram,
+  Terminal,
+} from "lucide-react";
+import { NAV_ITEMS, COMPANY_NAME, INSTAGRAM_URL } from "@/lib/constants";
+import { buildWhatsAppUrl } from "@/lib/utils";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const headerWhatsAppUrl = buildWhatsAppUrl(
+    "Olá, DD Sistemas! Vim pelo site e gostaria de conversar com um especialista."
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,11 +97,36 @@ export default function Navbar() {
               ))}
             </nav>
 
-            {/* CTA Desktop */}
-            <div className="hidden md:flex items-center gap-3">
+            {/* Ações Desktop: Redes Sociais + CTA */}
+            <div className="hidden md:flex items-center gap-2.5">
+              {/* Ícone Instagram */}
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-navy-800/80 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 border border-white/10 hover:border-transparent flex items-center justify-center text-slate-300 hover:text-white transition-all duration-300 shadow-sm hover:scale-105"
+                aria-label="Siga a DD Sistemas no Instagram"
+                title="Instagram da DD Sistemas"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+
+              {/* Ícone WhatsApp */}
+              <a
+                href={headerWhatsAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-navy-800/80 hover:bg-brand-whatsapp border border-white/10 hover:border-transparent flex items-center justify-center text-slate-300 hover:text-white transition-all duration-300 shadow-sm hover:scale-105"
+                aria-label="Fale conosco via WhatsApp"
+                title="WhatsApp da DD Sistemas"
+              >
+                <MessageCircle className="w-4 h-4" />
+              </a>
+
+              {/* Botão Solicitar Orçamento */}
               <a
                 href="#contato"
-                className="relative inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-brand-blue to-blue-600 hover:from-blue-600 hover:to-brand-cyan transition-all duration-300 shadow-md hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0"
+                className="relative inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-brand-blue to-blue-600 hover:from-blue-600 hover:to-brand-cyan transition-all duration-300 shadow-md hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0 ml-1"
               >
                 <span>Solicitar Orçamento</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -165,8 +203,8 @@ export default function Navbar() {
                 </nav>
               </div>
 
-              {/* Botão de Contato no Rodapé do Menu */}
-              <div className="pt-6 border-t border-white/10">
+              {/* Botão de Contato e Redes no Rodapé do Menu */}
+              <div className="pt-6 border-t border-white/10 space-y-4">
                 <a
                   href="#contato"
                   onClick={() => setMobileMenuOpen(false)}
@@ -175,7 +213,30 @@ export default function Navbar() {
                   <MessageSquare className="w-5 h-5" />
                   <span>Solicitar Orçamento</span>
                 </a>
-                <p className="mt-3 text-center text-xs text-slate-400">
+
+                {/* Redes Sociais no Mobile */}
+                <div className="flex items-center justify-center gap-3 pt-2">
+                  <a
+                    href={INSTAGRAM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 py-2.5 px-3 rounded-xl bg-navy-800 border border-white/10 hover:border-brand-cyan/40 flex items-center justify-center gap-2 text-xs font-semibold text-slate-200 hover:text-white transition-colors"
+                  >
+                    <Instagram className="w-4 h-4 text-pink-400" />
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    href={headerWhatsAppUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 py-2.5 px-3 rounded-xl bg-navy-800 border border-white/10 hover:border-brand-whatsapp flex items-center justify-center gap-2 text-xs font-semibold text-slate-200 hover:text-white transition-colors"
+                  >
+                    <MessageCircle className="w-4 h-4 text-brand-whatsapp" />
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+
+                <p className="text-center text-xs text-slate-400">
                   Atendimento ágil para todo o Brasil
                 </p>
               </div>
