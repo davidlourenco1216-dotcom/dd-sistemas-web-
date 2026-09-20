@@ -24,6 +24,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Início", href: "#inicio" },
   { label: "Soluções", href: "#solucoes" },
   { label: "Apps Condomínio", href: "#condominios" },
+  { label: "Criação de Sites", href: "#sites" },
   { label: "Sobre o Fundador", href: "#fundador" },
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "Depoimentos", href: "#depoimentos" },
@@ -226,10 +227,10 @@ export const TESTIMONIALS: TestimonialItem[] = [
 
 // Segmentos para o formulário de contato
 export const BUSINESS_SEGMENTS = [
+  { id: "criacao-sites", label: "Criação de Site Institucional ou Landing Page" },
   { id: "ambos-apps-condominio", label: "Condomínio Residencial (DD Estoque + DD ManutenPro)" },
   { id: "dd-estoque-avulso", label: "App DD Estoque (Almoxarifado & Insumos)" },
   { id: "manutenpro-avulso", label: "App DD ManutenPro (Manutenção Preventiva & O.S.)" },
-  { id: "pequeno-negocio", label: "Pequeno Empreendedor (Açaí, Sorveteria, Pet Shop, Loja)" },
-  { id: "empresa", label: "Empresa / Corporativo (Site ou Automação)" },
-  { id: "sob-medida", label: "Projeto de Software Sob Medida / Outro" },
+  { id: "pequeno-negocio", label: "Pequeno Empreendedor (Cardápio Digital, PDV, Comércio)" },
+  { id: "empresa-sistema", label: "Empresa / Corporativo (Software Sob Medida ou Automação)" },
 ];
