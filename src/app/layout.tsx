@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "DD Sistemas",
     "software sob medida",
     "ERP condomínio",
-    "controle de acesso portaria",
+    "gestão de encomendas condomínio",
     "cardápio virtual",
     "sistema para sorveteria",
     "sistema para pet shop",

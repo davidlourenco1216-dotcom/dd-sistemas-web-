@@ -229,12 +229,12 @@ export default function Hero() {
             <div className="p-5 sm:p-7 bg-gradient-to-b from-navy-900/60 to-navy-950/80 min-h-[300px]">
               {activeTab === "condo" && (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-in fade-in duration-300">
-                  {/* Bloco 1: Portaria & Encomendas */}
+                  {/* Bloco 1: Encomendas & Avisos */}
                   <div className="p-4 rounded-xl bg-navy-900/80 border border-brand-cyan/30 shadow-glow flex flex-col justify-between">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs font-semibold text-white flex items-center gap-1.5">
                         <Bell className="w-3.5 h-3.5 text-brand-cyan" />
-                        ERP Portaria & Acessos
+                        ERP Encomendas & Avisos
                       </span>
                       <span className="text-[10px] px-2 py-0.5 rounded-full bg-brand-cyan/20 text-brand-cyan font-bold">
                         WhatsApp Ativo
@@ -242,16 +242,16 @@ export default function Hero() {
                     </div>
                     <div className="space-y-2 text-xs">
                       <div className="p-2 rounded-lg bg-navy-800/80 flex items-center justify-between">
-                        <span className="text-slate-200">Apto 304 • Encomenda</span>
+                        <span className="text-slate-200">Apto 304 • Encomenda Mercado Livre</span>
                         <span className="text-emerald-400 font-medium">Notificado ✓</span>
                       </div>
                       <div className="p-2 rounded-lg bg-navy-800/80 flex items-center justify-between">
-                        <span className="text-slate-200">Acesso Visitante • Placa QX-841</span>
-                        <span className="text-brand-cyan font-medium">Liberado</span>
+                        <span className="text-slate-200">Mural • Aviso Manutenção Preventiva</span>
+                        <span className="text-brand-cyan font-medium">Disparado</span>
                       </div>
                     </div>
                     <div className="mt-3 text-[11px] text-slate-400">
-                      142 registros e encomendas hoje
+                      Notificações instantâneas no WhatsApp
                     </div>
                   </div>
 

@@ -65,9 +65,9 @@ export default function CondoEcosystem() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed"
           >
-            A integração definitiva entre portaria, almoxarifado de insumos e manutenção predial.
-            Três plataformas modernas desenvolvidas para síndicos e administradoras que exigem
-            controle rigoroso e transparência.
+            A integração definitiva entre gestão de encomendas e avisos, almoxarifado de insumos e
+            manutenção predial. Três plataformas modernas desenvolvidas para síndicos e administradoras
+            que exigem controle rigoroso e transparência.
           </motion.p>
         </div>
 

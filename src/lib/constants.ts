@@ -50,11 +50,11 @@ export const SOLUTIONS: SolutionItem[] = [
     id: "condominios-residenciais",
     badge: "Ecossistema Completo",
     title: "Condomínios Residenciais",
-    targetAudience: "Síndicos, Administradoras, Portarias e Moradores",
+    targetAudience: "Síndicos, Administradoras e Moradores",
     description:
-      "Suíte integrada de aplicativos: ERP de Portaria & Acessos, App DD Estoque (Almoxarifado) e App ManutenPro (Manutenções & O.S.).",
+      "Suíte integrada de aplicativos: ERP de Gestão & Encomendas, App DD Estoque (Almoxarifado) e App ManutenPro (Manutenções & O.S.).",
     features: [
-      "ERP Central: Controle de acessos, encomendas e reservas online",
+      "ERP Central: Gestão de encomendas, reservas online e avisos digitais",
       "App DD Estoque: Almoxarifado, insumos e alerta de estoque mínimo",
       "App ManutenPro: Preventivas, cronograma de elevadores/bombas e O.S. com foto",
       "Mural de avisos digitais com confirmação de leitura pelo morador",
@@ -93,16 +93,16 @@ export const CONDO_ECOSYSTEM: CondoAppItem[] = [
     isMainCore: true,
     badge: "Plataforma Central",
     name: "ERP DD Condomínios",
-    category: "Gestão, Portaria & Moradores",
+    category: "Gestão, Encomendas & Moradores",
     description:
-      "A espinha dorsal da gestão condominial. Centraliza segurança de portaria, encomendas no WhatsApp, reservas de áreas e comunicação com moradores.",
+      "A espinha dorsal da gestão condominial. Centraliza gestão de encomendas com avisos automáticos no WhatsApp, reservas de áreas comuns e comunicação direta com moradores.",
     features: [
-      "Controle ágil de acesso de visitantes, veículos e prestadores",
-      "Gestão de encomendas com notificação push instantânea no WhatsApp",
+      "Gestão inteligente de encomendas com notificação push instantânea no WhatsApp",
       "Reserva online de áreas comuns (churrasqueira, salão, academia)",
       "Mural de avisos digital com confirmação de leitura pelos moradores",
       "Armazenamento em nuvem de atas, convenções e prestação de contas",
-      "App mobile intuitivo para moradores e painel veloz para porteiros",
+      "Canal direto de comunicação entre síndico, conselho e moradores",
+      "App mobile intuitivo para moradores e painel administrativo em tempo real",
     ],
     iconName: "Building2",
     whatsappMessage:
@@ -178,7 +178,7 @@ export const DIFFERENTIALS: DifferentialItem[] = [
 export const METRICS: MetricItem[] = [
   {
     value: "+50.000",
-    label: "Acessos e Pedidos",
+    label: "Operações e Pedidos",
     detail: "Processados com estabilidade e velocidade em nossas plataformas.",
   },
   {
