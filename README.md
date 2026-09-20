@@ -68,9 +68,9 @@ Para definir o número oficial de WhatsApp que receberá os leads de todas as se
 👉 **`src/lib/constants.ts`**
 
 ```typescript
-export const WHATSAPP_NUMBER = "5585999999999"; // Substitua por DDI + DDD + Número (apenas dígitos)
-export const WHATSAPP_DISPLAY = "(85) 99999-9999"; // Formato visual exibido no site
-export const COMPANY_EMAIL = "contato@ddsistemas.com.br";
+export const WHATSAPP_NUMBER = "5585992002559"; // DDI + DDD + Número (apenas dígitos)
+export const WHATSAPP_DISPLAY = "(85) 99200-2559"; // Formato visual exibido no site
+export const COMPANY_EMAIL = "ddsistemas0312@gmail.com";
 ```
 
 ---

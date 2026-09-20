@@ -15,7 +15,7 @@ export const WHATSAPP_DISPLAY = "(85) 99200-2559";
 export const INSTAGRAM_URL =
   "https://www.instagram.com/dd.sistemas1622?stkn=ZGRiNXYwaG1lNzFh";
 export const INSTAGRAM_HANDLE = "@dd.sistemas1622";
-export const COMPANY_EMAIL = "contato@ddsistemas.com.br";
+export const COMPANY_EMAIL = "ddsistemas0312@gmail.com";
 export const COMPANY_NAME = "DD Sistemas";
 export const COPYRIGHT_TEXT = "© 2026 DD Sistemas. Todos os direitos reservados.";
 
