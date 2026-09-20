@@ -37,7 +37,7 @@ export default function HomePage() {
         {/* Seção Geral de Soluções */}
         <Solutions />
 
-        {/* Ecossistema Especializado de Condomínios Residenciais (ERP + DD Estoque + ManutenPro) */}
+        {/* Aplicativos Especializados de Condomínios Residenciais (DD Estoque + ManutenPro) */}
         <CondoEcosystem />
 
         {/* Diferenciais Competitivos e Métricas de Impacto */}

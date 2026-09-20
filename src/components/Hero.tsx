@@ -74,9 +74,11 @@ export default function Hero() {
           >
             Desenvolvemos{" "}
             <strong className="text-white font-semibold">Sites Institucionais</strong> modernos,{" "}
-            <strong className="text-brand-cyan font-semibold">ERPs para Condomínios</strong> e{" "}
-            <strong className="text-white font-semibold">Sistemas sob medida</strong> para pequenos
-            empreendedores e empresas acelerarem a produtividade.
+            <strong className="text-brand-cyan font-semibold">
+              Aplicativos para Condomínios (DD Estoque e ManutenPro)
+            </strong>{" "}
+            e <strong className="text-white font-semibold">Sistemas sob medida</strong> para acelerar a
+            sua operação.
           </motion.p>
 
           {/* CTAs */}
@@ -151,10 +153,10 @@ export default function Hero() {
             </div>
             <div>
               <div className="text-xs font-semibold text-white flex items-center gap-1.5">
-                <span>Encomenda Notificada</span>
+                <span>DD Estoque Condomínio</span>
                 <span className="w-2 h-2 rounded-full bg-brand-whatsapp animate-pulse" />
               </div>
-              <p className="text-[11px] text-slate-400">Morador Apto 402 avisado no WhatsApp</p>
+              <p className="text-[11px] text-slate-400">Almoxarifado &amp; insumos 100% sob controle</p>
             </div>
           </motion.div>
 
@@ -198,7 +200,7 @@ export default function Hero() {
                   }`}
                 >
                   <Building2 className="w-3.5 h-3.5" />
-                  <span>ERP Condomínio</span>
+                  <span>DD Estoque &amp; ManutenPro</span>
                 </button>
                 <button
                   onClick={() => setActiveTab("delivery")}
@@ -209,7 +211,7 @@ export default function Hero() {
                   }`}
                 >
                   <ShoppingBag className="w-3.5 h-3.5" />
-                  <span>PDV & Negócios</span>
+                  <span>PDV &amp; Negócios</span>
                 </button>
                 <button
                   onClick={() => setActiveTab("corp")}
@@ -220,7 +222,7 @@ export default function Hero() {
                   }`}
                 >
                   <Globe2 className="w-3.5 h-3.5" />
-                  <span>Sites & SEO</span>
+                  <span>Sites &amp; SEO</span>
                 </button>
               </div>
             </div>
@@ -228,82 +230,68 @@ export default function Hero() {
             {/* Corpo da Demonstração Conforme a Aba Selecionada */}
             <div className="p-5 sm:p-7 bg-gradient-to-b from-navy-900/60 to-navy-950/80 min-h-[300px]">
               {activeTab === "condo" && (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-in fade-in duration-300">
-                  {/* Bloco 1: Encomendas & Avisos */}
-                  <div className="p-4 rounded-xl bg-navy-900/80 border border-brand-cyan/30 shadow-glow flex flex-col justify-between">
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-xs font-semibold text-white flex items-center gap-1.5">
-                        <Bell className="w-3.5 h-3.5 text-brand-cyan" />
-                        ERP Encomendas & Avisos
-                      </span>
-                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-brand-cyan/20 text-brand-cyan font-bold">
-                        WhatsApp Ativo
-                      </span>
-                    </div>
-                    <div className="space-y-2 text-xs">
-                      <div className="p-2 rounded-lg bg-navy-800/80 flex items-center justify-between">
-                        <span className="text-slate-200">Apto 304 • Encomenda Mercado Livre</span>
-                        <span className="text-emerald-400 font-medium">Notificado ✓</span>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 animate-in fade-in duration-300">
+                  {/* Bloco 1: App DD Estoque */}
+                  <div className="p-5 rounded-2xl bg-navy-900/90 border border-brand-cyan/40 shadow-glow flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="text-xs font-bold text-white flex items-center gap-2">
+                          <Package className="w-4 h-4 text-brand-cyan" />
+                          App DD Estoque (Almoxarifado)
+                        </span>
+                        <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-brand-cyan/20 text-brand-cyan font-bold">
+                          Insumos Sob Controle
+                        </span>
                       </div>
-                      <div className="p-2 rounded-lg bg-navy-800/80 flex items-center justify-between">
-                        <span className="text-slate-200">Mural • Aviso Manutenção Preventiva</span>
-                        <span className="text-brand-cyan font-medium">Disparado</span>
+                      <p className="text-xs text-slate-300 mb-3">
+                        Controle de materiais de limpeza, ferramentas, lâmpadas e elétricos.
+                      </p>
+                      <div className="space-y-2 text-xs">
+                        <div className="p-2.5 rounded-xl bg-navy-800/90 flex items-center justify-between">
+                          <span className="text-slate-200">Lâmpadas LED 12W Tubulares</span>
+                          <span className="text-amber-400 font-semibold">Alerta Estoque Mínimo (4 un)</span>
+                        </div>
+                        <div className="p-2.5 rounded-xl bg-navy-800/90 flex items-center justify-between">
+                          <span className="text-slate-200">Cloro Concentrado 50L (Piscina)</span>
+                          <span className="text-emerald-400 font-semibold">Entrada Registrada ✓</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="mt-3 text-[11px] text-slate-400">
-                      Notificações instantâneas no WhatsApp
+                    <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+                      <span>Relatórios de consumo por bloco</span>
+                      <span className="text-emerald-400 font-medium">Zero desperdício</span>
                     </div>
                   </div>
 
-                  {/* Bloco 2: App DD Estoque */}
-                  <div className="p-4 rounded-xl bg-navy-900/80 border border-white/10 flex flex-col justify-between">
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-xs font-semibold text-white flex items-center gap-1.5">
-                        <Package className="w-3.5 h-3.5 text-cyan-300" />
-                        App DD Estoque
-                      </span>
-                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-semibold">
-                        Almoxarifado
-                      </span>
-                    </div>
-                    <div className="space-y-2 text-xs">
-                      <div className="p-2 rounded-lg bg-navy-800/80 flex items-center justify-between">
-                        <span className="text-slate-200">Lâmpadas LED 12W</span>
-                        <span className="text-amber-400 font-medium">Estoque Mínimo (5 un)</span>
+                  {/* Bloco 2: App ManutenPro */}
+                  <div className="p-5 rounded-2xl bg-navy-900/90 border border-brand-cyan/40 shadow-glow flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="text-xs font-bold text-white flex items-center gap-2">
+                          <TrendingUp className="w-4 h-4 text-cyan-300" />
+                          App ManutenPro (Manutenção &amp; O.S.)
+                        </span>
+                        <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-bold">
+                          Preventivas em Dia
+                        </span>
                       </div>
-                      <div className="p-2 rounded-lg bg-navy-800/80 flex items-center justify-between">
-                        <span className="text-slate-200">Desinfetante Hospitalar</span>
-                        <span className="text-emerald-400 font-medium">Abastecido (18 L)</span>
-                      </div>
-                    </div>
-                    <div className="mt-3 text-[11px] text-slate-400">
-                      Entrada e saída com controle de consumo
-                    </div>
-                  </div>
-
-                  {/* Bloco 3: App ManutenPro */}
-                  <div className="p-4 rounded-xl bg-navy-900/80 border border-white/10 flex flex-col justify-between">
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-xs font-semibold text-white flex items-center gap-1.5">
-                        <TrendingUp className="w-3.5 h-3.5 text-brand-cyan" />
-                        App ManutenPro
-                      </span>
-                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-semibold">
-                        O.S. & Preventivas
-                      </span>
-                    </div>
-                    <div className="space-y-2 text-xs">
-                      <div className="p-2 rounded-lg bg-navy-800/80 flex items-center justify-between">
-                        <span className="text-slate-200">Bomba D&apos;água 02</span>
-                        <span className="text-emerald-400 font-medium">Preventiva OK ✓</span>
-                      </div>
-                      <div className="p-2 rounded-lg bg-navy-800/80 flex items-center justify-between">
-                        <span className="text-slate-200">Elevador Social Bloco B</span>
-                        <span className="text-brand-cyan font-medium">O.S. com Foto</span>
+                      <p className="text-xs text-slate-300 mb-3">
+                        Cronograma de elevadores, bombas, geradores e infraestrutura.
+                      </p>
+                      <div className="space-y-2 text-xs">
+                        <div className="p-2.5 rounded-xl bg-navy-800/90 flex items-center justify-between">
+                          <span className="text-slate-200">Bomba de Recalque 02</span>
+                          <span className="text-emerald-400 font-semibold">Preventiva Concluída ✓</span>
+                        </div>
+                        <div className="p-2.5 rounded-xl bg-navy-800/90 flex items-center justify-between">
+                          <span className="text-slate-200">Elevador Social Bloco B</span>
+                          <span className="text-brand-cyan font-semibold">O.S. com Foto Anexada</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="mt-3 text-[11px] text-slate-400">
-                      Histórico técnico e cronograma em dia
+                    <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+                      <span>Histórico técnico completo</span>
+                      <span className="text-brand-cyan font-medium">Sem paradas surpresas</span>
                     </div>
                   </div>
                 </div>

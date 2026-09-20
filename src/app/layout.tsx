@@ -8,14 +8,17 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "DD Sistemas | Software Sob Medida, ERP para Condomínios e Sites",
+  title: "DD Sistemas | Software Sob Medida, Apps para Condomínios e Sites",
   description:
-    "Soluções inteligentes em software para transformar e automatizar o seu negócio. ERPs para condomínios, sistemas para pequenos empreendedores e sites institucionais modernos de alta performance.",
+    "Soluções inteligentes em software para transformar e automatizar o seu negócio. Aplicativos para condomínios (DD Estoque e ManutenPro), sistemas para pequenos empreendedores e sites institucionais modernos de alta performance.",
   keywords: [
     "DD Sistemas",
     "software sob medida",
-    "ERP condomínio",
-    "gestão de encomendas condomínio",
+    "DD Estoque",
+    "ManutenPro",
+    "aplicativo para condomínio",
+    "controle de almoxarifado condomínio",
+    "manutenção preventiva condomínio",
     "cardápio virtual",
     "sistema para sorveteria",
     "sistema para pet shop",
@@ -30,7 +33,7 @@ export const metadata: Metadata = {
     url: "https://ddsistemas.com.br",
     title: "DD Sistemas | Soluções Inteligentes em Software",
     description:
-      "Transforme sua gestão com ERPs para condomínios, cardápios digitais, PDV e sites institucionais de alta conversão.",
+      "Transforme sua gestão com os apps para condomínios (DD Estoque e ManutenPro), cardápios digitais, PDV e sites institucionais de alta conversão.",
     siteName: "DD Sistemas",
   },
   robots: {

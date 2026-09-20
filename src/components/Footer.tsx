@@ -45,8 +45,8 @@ export default function Footer({ onOpenLegal }: FooterProps) {
             </a>
 
             <p className="text-sm text-slate-300 leading-relaxed max-w-sm">
-              Empresa brasileira de tecnologia focada em criar softwares inteligentes, ERPs para
-              condomínios e plataformas sob medida que reduzem custos e aumentam as vendas.
+              Empresa brasileira de tecnologia focada em criar softwares inteligentes, aplicativos para
+              condomínios (DD Estoque e ManutenPro) e plataformas sob medida que reduzem custos e aumentam a produtividade.
             </p>
 
             <div className="pt-2 flex items-center gap-3">
